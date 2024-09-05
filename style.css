@@ -1,0 +1,182 @@
+/* Pages Visibility */
+#introduction-page {
+  display: block; /* Show the introduction page by default */
+}
+
+#vishing-page,
+#quiz-page,
+#ai-page,
+#quiz-page2,
+#explanation-page1,
+#explanation-page2,
+#last-page {
+  display: none;
+}
+
+/* Global Styles */
+body,
+html {
+  background-color: #f0f0f0; /* Lighter background for improved contrast */
+  color: #333; /* Darker, softer text color for readability */
+  font-family: Arial, sans-serif; /* Change to a more accessible, modern font */
+  margin: 3%; /* Ensure x% margin on all sides */
+  padding: 0;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Container for all pages */
+#all-pages {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Headings */
+h1 {
+  color: #003366; /* Darker, less intense color */
+  margin-bottom: 40px;
+  font-size: 50px; /* Increase heading size */
+  text-align: center;
+}
+
+.title {
+  color: #003366;
+  margin-bottom: 50px;
+  font-size: 64px; /* Even larger font for the main titles */
+  text-align: center;
+}
+
+/* Paragraphs */
+p {
+  color: #333; /* Softer dark text color */
+  font-size: 40px; /* Increased font size */
+  margin-bottom: 20px; /* Add space after paragraphs */
+  text-align: center; /* Centralize text */
+}
+
+/* Buttons */
+button {
+  background-color: #003366; /* Dark blue background for buttons */
+  color: #fff; /* White text for better contrast */
+  border: 2px solid #003366;
+  padding: 14px 28px; /* Larger padding for easier clicks */
+  font-size: 24px; /* Increased font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button:hover {
+  background-color: #0059b3; /* Lighter hover color */
+}
+
+.yes-button {
+  padding: 30px 60px; /* Extra large for emphasis */
+  font-size: 36px; /* Increase the font size for readability */
+}
+
+button:focus {
+  outline: 3px solid #0059b3; /* Add focus outline for accessibility */
+}
+
+/* Forms */
+form {
+  display: block; /* Switch to block layout for forms */
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+label {
+  font-size: 30px; /* Increase label size */
+  color: #003366;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+  accent-color: #0059b3;
+  transform: scale(1.5); /* Larger checkboxes */
+  margin-right: 15px;
+}
+
+/* Checkbox and Image Spacing */
+.checkbox-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Larger spacing between checkboxes and images */
+  align-items: flex-start; /* Align items at the top for readability */
+  margin-bottom: 30px;
+}
+
+/* Bullet Points - Centralized List but Left-Aligned Text */
+ul {
+  list-style-position: inside;
+  padding: 0;
+  margin: 20px auto;
+  text-align: left; /* Text aligned to the left */
+}
+
+ul li {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  border: 3px solid #0059b3; /* Adjusted border color */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Softer shadow for readability */
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px; /* Added space between image and the top */
+}
+
+/* Responsive Images */
+picture {
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px; /* Ensure space from top of the page */
+}
+
+/* Feedback Text */
+#sub-vishing,
+#sub-ai {
+  color: #0059b3;
+  font-size: 30px; /* Increased font size */
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Adjust Spacing Between Form Elements */
+form {
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #003366;
+  border-radius: 6px;
+  border: 3px solid #f0f0f0;
+}
